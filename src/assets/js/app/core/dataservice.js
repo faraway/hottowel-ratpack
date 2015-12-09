@@ -18,12 +18,14 @@
         function getMessageCount() { return $q.when(72); }
 
         function getPeople() {
-            return $http.get('/api/people')
+            return $http.get('https://certify-rhel-01.corp.certifydatasystems.com:8245/hl/1.4/fhir/AuditEvent?format=json')
                 .then(success)
                 .catch(fail);
 
             function success(response) {
-                return response.data;
+                console.log('response data...');
+                console.log(response);
+                return response.data.entry;
             }
 
             function fail(e) {
