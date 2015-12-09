@@ -59,6 +59,9 @@
                              allow-collapse="true"></div>
                         <div class="widget-content text-center text-info">
                             <small>{{vm.news.description}}</small>
+                            <small>First name: {{vm.news.claims['http://wso2.org/claims/givenname']}}</small>
+                            <small>Last name:  {{vm.news.claims['http://wso2.org/claims/lastname']}}</small>
+                            <small>Email address: {{vm.news.claims['http://wso2.org/claims/emailaddress']}}</small>
                         </div>
                         <div class="widget-foot">
                             <div class="clearfix"></div>

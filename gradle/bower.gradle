@@ -29,4 +29,9 @@ bower {
   'jquery'('^2.1.4')
   'moment'('^2.10.3')
   'toastr'('^2.1.1')
+  'oauth-ng'('git://github.com/patrickyao1988/oauth-ng.git#oidc-0.4.4-wso2')
+
+//  additional = [ not working...
+//    resolutions: "angular: '~1.4.5'"
+//  ]
 }

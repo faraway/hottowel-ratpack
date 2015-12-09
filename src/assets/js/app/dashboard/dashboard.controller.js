@@ -5,13 +5,14 @@
         .module('app.dashboard')
         .controller('DashboardController', DashboardController);
 
-    DashboardController.$inject = ['$q', 'dataservice', 'logger'];
+    DashboardController.$inject = ['$q', 'dataservice', 'logger', 'AccessToken'];
     /* @ngInject */
-    function DashboardController($q, dataservice, logger) {
+    function DashboardController($q, dataservice, logger, AccessToken) {
         var vm = this;
         vm.news = {
-            title: 'hottowelRatpack',
-            description: 'Hot Towel Angular is a SPA template for Angular developers.'
+            title: 'Welcome!',
+            description: 'User profile',
+            claims: AccessToken.get().id_token_claims
         };
         vm.messageCount = 0;
         vm.people = [];

@@ -16,6 +16,17 @@
 </head>
 <body>
     <div>
+        <oauth
+            authorize-path="/oauth2/authorize"
+            site="https://certify-hl-4.corp.certifydatasystems.com:9443"
+            client-id="MUBsZJCbXubwyqziXB_WdRpJEXsa"
+            redirect-uri="http://localhost:5050/"
+            scope="openid"
+            template="modules/oauth-ng/views/templates/button.html"
+            issuer="http://wso2.org/gateway"
+            x509="-----BEGIN CERTIFICATE-----MIICBTCCAW6gAwIBAgIEaq8KvDANBgkqhkiG9w0BAQQFADBHMREwDwYDVQQDEwhjYXJlLmNvbTENMAsGA1UECxMETm9uZTEUMBIGA1UEChMLTm9uZSBMPU5vbmUxDTALBgNVBAYTBE5vbmUwHhcNMTUxMDA0MDAyNjMyWhcNMjUxMDMxMDAyNjMyWjBHMREwDwYDVQQDEwhjYXJlLmNvbTENMAsGA1UECxMETm9uZTEUMBIGA1UEChMLTm9uZSBMPU5vbmUxDTALBgNVBAYTBE5vbmUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAIBzx6MggSa+WXPOMjAisj/BqARDQgE/PPem3GkfoderDBKARdr4ImcNAIWilN65vi0ePLS/L6pCXXXDKsmNRvrbkDktrRtQ+iOBB0IKYvILXovcEGTpSFClGnKKULP48rSu5pH1pJGQpBa+p5RYZhdo5+f5N+2PG7SSTeSlQhkHAgMBAAEwDQYJKoZIhvcNAQEEBQADgYEAMBbuVdHSEc3YV59XKJWWJ3rA+ZiuPBNAeacRrn2OJf1+TSZpMZ20Dh1IeF3cL+xlSi0xKOIKaYCFTlEy61ylOr7gL9Lj2rmsIuKi8joD/6pz/mkpILrvdIRWPx/3n8OoV75UBe2KtU5Br2eQbr3/TLiUSyZuWnjcd/oQ1gX1BlA=-----END CERTIFICATE-----"
+            >
+        </oauth>
         <div ng-include="'app/layout/shell.html'"></div>
         <div id="splash-page" ng-show="showSplash">
             <div class="page-splash">

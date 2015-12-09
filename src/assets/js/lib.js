@@ -6,3 +6,6 @@
 //= require /bower_components/angular-ui-router/angular-ui-router
 //= require /bower_components/toastr/toastr
 //= require /bower_components/angular-animate/angular-animate
+//= require /bower_components/jsrsasign/jsrsasign-latest-all-min
+//= require /bower_components/ngStorage/ngStorage
+//= require /bower_components/oauth-ng/oauth-ng
