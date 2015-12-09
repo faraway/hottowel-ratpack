@@ -18,7 +18,7 @@
         function getMessageCount() { return $q.when(72); }
 
         function getPeople() {
-            return $http.get('https://certify-rhel-01.corp.certifydatasystems.com:8245/hl/1.4/fhir/AuditEvent?format=json')
+            return $http.get('https://certify-rhel-01.corp.certifydatasystems.com:8245/t/care.com/hl/1.4/fhir/AuditEvent?format=json')
                 .then(success)
                 .catch(fail);
 
